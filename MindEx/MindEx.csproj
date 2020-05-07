@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <PackAsTool>true</PackAsTool>
+    <IsTool>true</IsTool>
+    <ToolCommandName>dotnet-mindex</ToolCommandName>
+    <PackageOutputPath>./bin</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Vamsi TP</Authors>
+    <Title>MindEx</Title>
+    <PackageDescription>Mind-map generator for HTML-tables (saved from Excel)</PackageDescription>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/vamsitp/MindEx</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vamsitp/MindEx</RepositoryUrl>
+    <PackageTags>Excel;HTML;Mind;Map;Mindmap;Tree;Chart;</PackageTags>
+    <Company>Microsoft</Company>
+    <Version>1.0.0</Version>
+    <StartupObject>MindEx.Program</StartupObject>
+    <Deterministic>false</Deterministic>
+    <ApplicationIcon />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.3" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.23" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="ServiceStack" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MindEx.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MindEx.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="MindEx.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

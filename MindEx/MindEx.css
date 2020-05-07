@@ -1,0 +1,25 @@
+﻿/*Credit: https://bl.ocks.org/d3noob/1a96af738c89b88723eb63456beb6510*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: scroll;
+}
+
+.node {
+    cursor: pointer;
+}
+
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 5px;
+    }
+
+    .node text {
+        font-size: 14px;
+    }
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 3px;
+}

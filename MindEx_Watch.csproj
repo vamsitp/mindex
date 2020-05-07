@@ -1,0 +1,10 @@
+<Project>
+  <!-- cd path-to-input-html/json-file -->
+  <!-- dotnet watch mindex Input.html -->
+  <ItemGroup>
+        <Watch Include="Input.html" />
+        <!--<Watch Include="Input.json" />-->
+    </ItemGroup>
+
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft.Common.targets" />
+</Project>
