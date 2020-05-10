@@ -1,5 +1,7 @@
 # mindex
-[Mind-map](https://bl.ocks.org/d3noob/1a96af738c89b88723eb63456beb6510) generator for JSON / XML / CSV or HTML-tables (saved from Excel)
+A [Mind-map](https://en.wikipedia.org/wiki/Mind_map) generator for JSON / XML / CSV or HTML-tables (saved from Excel)
+
+[![Mind-map tree](Tree.png)](https://bl.ocks.org/d3noob/1a96af738c89b88723eb63456beb6510 "Credit")
 
 ---
 
@@ -101,3 +103,6 @@ dotnet tool install -g --add-source ./bin mindex
 > **TODOs** 
 > - Handle `th` / `tbody` in case of HTML tables
 > - Accept *custom-styles*
+> - Handle `overflow-x` on mobile-screens
+> - Drag nodes
+> - Use [linkHorizontal](https://observablehq.com/@d3/tidy-tree)

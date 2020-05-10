@@ -1,5 +1,4 @@
-﻿// Credit: https://bl.ocks.org/d3noob/1a96af738c89b88723eb63456beb6510
-// Credit: dirk.songuer@microsoft.com
+﻿// Credits: https://bl.ocks.org/d3noob/1a96af738c89b88723eb63456beb6510, https://observablehq.com/@d3/tidy-tree, dirk.songuer@microsoft.com
 function getWidth() {
     return Math.max(
         document.body.scrollWidth,
@@ -159,7 +158,7 @@ function update(source) {
 
     // Creates a curved (diagonal) path from parent to the child nodes
     function diagonal(s, d) {
-
+        // path = `M ${s.x} ${s.y} C ${(s.x + d.x) / 2} ${s.y}, ${(s.x + d.x) / 2} ${d.y},  ${d.x} ${d.y}`; // vertical: https://bl.ocks.org/headwinds/4cc120edc973b34c4e569cfdd21b5516
         path = `M ${s.y} ${s.x} C ${(s.y + d.y) / 2} ${s.x}, ${(s.y + d.y) / 2} ${d.x}, ${d.y} ${d.x}`;
         return path;
     }
